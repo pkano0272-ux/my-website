@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClientSoftSol Business Website</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background-color: #ffffff;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fd5108;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* ---------- Navigation ---------- */
+    nav {
+      background-color: #fd5108;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      padding: 10px 20px;
+      background: #000000;
+      color: white;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #333;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      background: url('harshil.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* ---------- Sections ---------- */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* ---------- Services Grid ---------- */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: ##ffffff;
+      padding: 20px;
+      border: 2px solid #fd5108;
+      border-radius: 10px;
+    }
+
+    .service-box h3 {
+      color: #fd5108;
+      margin-bottom: 10px;
+    }
+
+    .service-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-box ul li {
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* ---------- Contact ---------- */
+    #contact a {
+      color: #fd5108;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+      color: #000000;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #fd5108;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="ClientSoftSol Logo">
+      <div>
+        <h1>Innovative Digital Solutions</h1>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Client Software Solutions</h2>
+      <p>Your trusted partner in Software Development, AI, Cloud, and IT Consulting.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Client Software Solutions, committed to deliver affordable, cutting edge professional technology solutions.
+      We maintain the highest design and development standards across multiple platforms and industries.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Software Development</h3>
+        <ul>
+          <li>Software Development</li>
+          <li>Website Development</li>
+          <li>CMS Development</li>
+          <li>Mobile App Development</li>
+          <li>Graphic & Web Design</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>Generative AI</h3>
+        <ul>
+          <li>Generative AI Development</li>
+          <li>Chatbot Development</li>
+          <li>RAG Development</li>
+          <li>AI Agent Development</li>
+          <li>Custom LLM Development</li>
+          <li>LLM Finetuning</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>Artificial Intelligence</h3>
+        <ul>
+          <li>AI Consulting</li>
+          <li>AI/ML Solutions</li>
+          <li>AI Software Development</li>
+          <li>AI-based Data Preparation</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>Data Engineering</h3>
+        <ul>
+          <li>Big Data Consulting</li>
+          <li>Automated Data Scraping</li>
+          <li>Data Analytics</li>
+          <li>Business Intelligence</li>
+          <li>ML Model Preparation</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>Cloud Services</h3>
+        <ul>
+          <li>Infrastructure Consulting</li>
+          <li>Cloud Migration</li>
+          <li>AWS Consulting</li>
+          <li>Azure Consulting</li>
+          <li>Google Consulting</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>IT Consulting</h3>
+        <ul>
+          <li>IT Outsourcing</li>
+          <li>Digital Transformation</li>
+          <li>Managed IT Services</li>
+          <li>Hire Offshore Engineer</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3>DevOps & Automation</h3>
+        <ul>
+          <li>CI/CD Implementation</li>
+          <li>Infrastructure As Code [IaC]</li>
+          <li>Testing & QA Automation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <strong>Phone:</strong> +27 725088969</p>
+    <p>📧 <strong>Email:</strong> 
+      <a href="mailto:hello@clientsoftsol.co.za">hello@clientsoftsol.co.za</a>
+    </p>
+    <p>🌍 <strong>Website:</strong> 
+      <a href="https://www.clientsoftsol.co.za" target="_blank">www.clientsoftsol.co.za</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Client Software Solutions. All Rights Reserved.</p>
+    <p>
+      📧 <a href="mailto:hello@clientsoftsol.co.za">hello@clientsoftsol.co.za</a> | 
+      🌍 <a href="https://www.clientsoftsol.co.za" target="_blank">www.clientsoftsol.co.za</a>
+    </p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </footer>
+
+</body>
+</html>
